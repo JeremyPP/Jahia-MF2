@@ -140,68 +140,68 @@ md-tooltip ._md-content {
 /* Element sizes */
 
 /* Percents */
-.set-size-100 {
+.dxWidth-100 {
 	width: 100%;
 }
 
-.set-size-90 {
+.dxWidth-90 {
 	width: 90%;
 }
 
-.set-size-80 {
+.dxWidth-80 {
 	width: 80%;
 }
 
-.set-size-50 {
+.dxWidth-50 {
 	width: 50%;
 }
 
-.set-size-Onethird {
+.dxWidth-Onethird {
 	width: calc(100% / 3);
 }
 
-.set-size-25 {
+.dxWidth-25 {
 	width: 25%;
 }
 
 /* Pixels */
-.set-size-1600px {
+.dxWidth-1600px {
 	width: 1600px;
 }
 
-.set-size-1440px {
+.dxWidth-1440px {
 	width: 1440px;
 }
 
-.set-size-1280px {
+.dxWidth-1280px {
 	width: 1280px;
 }
 
-.set-size-1080px {
+.dxWidth-1080px {
 	width: 1080px;
 }
 
-.set-size-960px {
+.dxWidth-960px {
 	width: 960px;
 }
 
-.set-size-840px {
+.dxWidth-840px {
 	width: 840px;
 }
 
-.set-size-720px {
+.dxWidth-720px {
 	width: 720px;
 }
 
-.set-size-600px {
+.dxWidth-600px {
 	width: 600px;
 }
 
-.set-size-480px {
+.dxWidth-480px {
 	width: 480px;
 }
 
-.set-size-320px {
+.dxWidth-320px {
 	width: 320px;
 }
 
