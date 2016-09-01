@@ -74,28 +74,28 @@ $(window).load(function() {
 
 ##### Element sizing
 
-You can use the `.set-size` class to set the size of any element on your page.
+You can use the `.dxWidth` class to set the size of any element on your page.
 You can set the size in pixels (px) or percent (%).
 
 The available sizes in percent are:
-- `.set-size-100`, sets a width of 100%.
-- `.set-size-90`, sets a width of 90%.
-- `.set-size-80`, sets a width of 80%.
-- `.set-size-50`, sets a width of 50%.
-- `.set-size-Onethird`, sets a width of 100% / 3.
-- `.set-size-25`, sets a width of 25%.
+- `.dxWidth-100`, sets a width of 100%.
+- `.dxWidth-90`, sets a width of 90%.
+- `.dxWidth-80`, sets a width of 80%.
+- `.dxWidth-50`, sets a width of 50%.
+- `.dxWidth-Onethird`, sets a width of 100% / 3.
+- `.dxWidth-25`, sets a width of 25%.
 
 In pixels, the available size are:
-- `set-size-1600px`,
-- `set-size-1440px`,
-- `set-size-1280px`,
-- `set-size-1080px`,
-- `set-size-960px`,
-- `set-size-840px`,
-- `set-size-720px`,
-- `set-size-600px`,
-- `set-size-480px`,
-- `set-size-320px`.
+- `dxWidth-1600px`,
+- `dxWidth-1440px`,
+- `dxWidth-1280px`,
+- `dxWidth-1080px`,
+- `dxWidth-960px`,
+- `dxWidth-840px`,
+- `dxWidth-720px`,
+- `dxWidth-600px`,
+- `dxWidth-480px`,
+- `dxWidth-320px`.
 
 More sizing options will be available on future updates.
 
@@ -114,7 +114,7 @@ Just include the following html code in your page just after the `</h2>` on the 
     <div class="searchicon">
         <md-icon> search </md-icon>
     </div>
-    <input type="text" class="searchFieldInput set-size-100" name="header-search" value="" placeholder="Filter by keywords">
+    <input type="text" class="searchFieldInput dxWidth-100" name="header-search" value="" placeholder="Filter by keywords">
 </div>
 ```
 
@@ -133,7 +133,7 @@ An example of a header with search bar would look like this:
                 <div class="searchicon">
                     <md-icon> search </md-icon>
                 </div>
-                <input type="text" class="searchFieldInput set-size-100" name="header-search" value="" placeholder="Filter by keywords">
+                <input type="text" class="searchFieldInput dxWidth-100" name="header-search" value="" placeholder="Filter by keywords">
             </div>
             
         </div>
