@@ -409,3 +409,9 @@ md-toolbar.colorchangeheadersearch {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.54);
 }
+
+.perso-cards-container .perso-card .hidden-moreDetails-container {
+    min-height: 58px;
+    margin-top: 55px;
+    border-top: 1px solid rgba(0,0,0,0.12);
+}
