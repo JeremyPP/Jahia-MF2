@@ -410,8 +410,64 @@ md-toolbar.colorchangeheadersearch {
     color: rgba(0, 0, 0, 0.54);
 }
 
+
+/* More details section */
+
 .perso-cards-container .perso-card .hidden-moreDetails-container {
     min-height: 58px;
     margin-top: 55px;
     border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .moreDetails-title {
+	margin-top: 6px;
+	font-size: 15px;
+	padding-left: 6px;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .variant-item {
+    line-height: 48px;
+    position: relative;
+    background: #fafafa;
+    margin-top: 6px;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .reorder-icon {
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    margin-left: 16px;
+    opacity: .32;
+    cursor: default;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .variant-name {
+    display: inline-block;
+    margin-left: 56px;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .number-print {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.32);
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .variant-item-actions {
+	display: inline-block;
+	position: absolute;
+	right: 8px;
+	max-height: 48px;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .variant-item-actions button {
+	margin-top: 4px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.perso-cards-container .perso-card .hidden-moreDetails-container .variant-item-actions button md-icon {
+    font-size: 18px;
+    margin-top: 3px;
 }
