@@ -438,7 +438,7 @@ md-toolbar.colorchangeheadersearch {
     top: -1px;
     margin-left: 16px;
     opacity: .32;
-    cursor: default;
+    cursor: -webkit-grab;
 }
 
 .perso-cards-container .perso-card .hidden-moreDetails-container .variant-name {
