@@ -108,9 +108,6 @@
 					<div class="variant-list-container">
 					
 						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
-							</div>
 							<div class="variant-name"> Variant name 1</div>
 							<div class="number-print">42 prints</div>
 							<div class="variant-item-actions">
@@ -136,9 +133,6 @@
 						</div>
 						
 						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
-							</div>
 							<div class="variant-name"> Another variant name </div>
 							<div class="number-print">131 prints</div>
 							<div class="variant-item-actions">
@@ -164,9 +158,6 @@
 						</div>
 						
 						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
-							</div>
 							<div class="variant-name"> One more variant </div>
 							<div class="number-print">80 prints</div>
 							<div class="variant-item-actions">
@@ -202,7 +193,7 @@
 			
 				<div class="perso-card-leftContainer">
 					<div class="perso-name">Optimization<span class="perso-variants">3 variants</span></div>
-					<div class="perso-pagename"><a href="#">My_homepage</a><span class="perso-status">Published</span></div>
+					<div class="perso-pagename"><a href="#">homepage</a><span class="perso-status">Published</span></div>
 				</div>
 				
 				<div class="perso-card-rightContainer">
@@ -225,7 +216,10 @@
 				
 					<!-- More details content -->
 					<div class="perso-card-leftContainer">
-						<div class="ajaxRendering">Ajax rendering: <span>true</span></div>
+						<div class="otherDetails-container">
+							<div class="ajaxRendering">Ajax rendering: <span>true</span></div>
+							<div class="listItemStatus">Optimization active</div>
+						</div>
 					</div>
 					<div class="perso-card-rightContainer">
 						<div class="optimizationHits-container">
@@ -236,89 +230,96 @@
 					
 					<!-- Variants -->
 					<div class="moreDetails-title">Variants:</div>
+					
 					<div class="variant-list-container">
 					
 						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
+							<div class="variantListItem-leftContainer">
+								<div class="variant-name"> Variant name 1</div>
+								<div class="number-print">42 prints</div>
 							</div>
-							<div class="variant-name"> Variant name 1</div>
-							<div class="number-print">42 prints</div>
-							<div class="variant-item-actions">
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> visibility </md-icon>
-									<md-tooltip md-direction="left">
-										Preview
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> mode_edit </md-icon>
-									<md-tooltip md-direction="bottom">
-										Edit variant
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> delete </md-icon>
-									<md-tooltip md-direction="right">
-										Delete
-									</md-tooltip>
-								</md-button>
-							</div>
-						</div>
-						
-						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
-							</div>
-							<div class="variant-name"> Another variant name </div>
-							<div class="number-print">131 prints</div>
-							<div class="variant-item-actions">
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> visibility </md-icon>
-									<md-tooltip md-direction="left">
-										Preview
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> mode_edit </md-icon>
-									<md-tooltip md-direction="bottom">
-										Edit variant
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> delete </md-icon>
-									<md-tooltip md-direction="right">
-										Delete
-									</md-tooltip>
-								</md-button>
+							<div class="variantListItem-rightContainer">
+								<div class="trafficAllocDisplay">Traffic allocation: <span>75%</span></div>
+								<div class="variant-item-actions">
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> visibility </md-icon>
+										<md-tooltip md-direction="left">
+											Preview
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> mode_edit </md-icon>
+										<md-tooltip md-direction="bottom">
+											Edit variant
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> delete </md-icon>
+										<md-tooltip md-direction="right">
+											Delete
+										</md-tooltip>
+									</md-button>
+								</div>
 							</div>
 						</div>
 						
 						<div class="variant-item">
-							<div class="reorder-icon">
-								<md-icon> reorder </md-icon>
+							<div class="variantListItem-leftContainer">
+								<div class="variant-name"> Another variant name </div>
+								<div class="number-print">131 prints</div>
 							</div>
-							<div class="variant-name"> One more variant </div>
-							<div class="number-print">80 prints</div>
-							<div class="variant-item-actions">
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> visibility </md-icon>
-									<md-tooltip md-direction="left">
-										Preview
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> mode_edit </md-icon>
-									<md-tooltip md-direction="bottom">
-										Edit variant
-									</md-tooltip>
-								</md-button>
-								<md-button class="md-icon-button" aria-label="preview">
-									<md-icon> delete </md-icon>
-									<md-tooltip md-direction="right">
-										Delete
-									</md-tooltip>
-								</md-button>
+							<div class="variantListItem-rightContainer">
+								<div class="trafficAllocDisplay">Traffic allocation: <span>10%</span></div>
+								<div class="variant-item-actions">
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> visibility </md-icon>
+										<md-tooltip md-direction="left">
+											Preview
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> mode_edit </md-icon>
+										<md-tooltip md-direction="bottom">
+											Edit variant
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> delete </md-icon>
+										<md-tooltip md-direction="right">
+											Delete
+										</md-tooltip>
+									</md-button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="variant-item">
+							<div class="variantListItem-leftContainer">
+								<div class="variant-name"> One more variant </div>
+								<div class="number-print">80 prints</div>
+							</div>
+							<div class="variantListItem-rightContainer">
+								<div class="trafficAllocDisplay">Traffic allocation: <span>15%</span></div>
+								<div class="variant-item-actions">
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> visibility </md-icon>
+										<md-tooltip md-direction="left">
+											Preview
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> mode_edit </md-icon>
+										<md-tooltip md-direction="bottom">
+											Edit variant
+										</md-tooltip>
+									</md-button>
+									<md-button class="md-icon-button" aria-label="preview">
+										<md-icon> delete </md-icon>
+										<md-tooltip md-direction="right">
+											Delete
+										</md-tooltip>
+									</md-button>
+								</div>
 							</div>
 						</div>
 						
@@ -353,7 +354,7 @@
 			<!-- End of Personalization card -->
 			
 			<!-- Personalization card (Example 3) -->
-			<div class="perso-card card-1 filteredCard">
+			<div class="perso-card card-1 filteredCard notActiveCard">
 			
 				<div class="perso-card-leftContainer">
 					<div class="perso-name">Homepage advertising<span class="perso-variants">3 variants</span></div>

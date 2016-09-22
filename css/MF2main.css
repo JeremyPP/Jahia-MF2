@@ -417,7 +417,8 @@ md-toolbar.colorchangeheadersearch {
 
 /* More details section */
 
-.optimizationHits-container {
+.optimizationHits-container,
+.otherDetails-container {
     margin-top: 7px;
     position: relative;
 	color: rgba(0,0,0,0.54);
@@ -435,6 +436,12 @@ md-toolbar.colorchangeheadersearch {
 	height: 28px !important;
     margin-top: 6px;
     margin-bottom: 12px;
+}
+
+.otherDetails-container .listItemStatus {
+	position: absolute;
+    top: 0;
+    right: 17px;
 }
 
 .optimizationHits-container .optimizationHits span,
@@ -467,6 +474,29 @@ md-toolbar.colorchangeheadersearch {
     margin-top: 6px;
 }
 
+.variantListItem-leftContainer {
+	width: calc(50% - 27px);
+}
+
+.variantListItem-rightContainer {
+	width: calc(50% + 27px);
+    position: absolute;
+    height: 49px;
+    top: 0;
+    right: 0;
+}
+
+.variantListItem-rightContainer .trafficAllocDisplay {
+	display: inline-block;
+	font-size: 14px;
+    font-weight: 500;
+	color: rgba(0,0,0,0.32);
+}
+
+.variantListItem-rightContainer .trafficAllocDisplay span {
+	color: rgba(0,0,0,0.84);
+}
+
 .perso-cards-container .perso-card .hidden-moreDetails-container .reorder-icon {
     display: inline-block;
     position: absolute;
@@ -478,7 +508,7 @@ md-toolbar.colorchangeheadersearch {
 
 .perso-cards-container .perso-card .hidden-moreDetails-container .variant-name {
     display: inline-block;
-    margin-left: 56px;
+    margin-left: 14px;
 }
 
 .perso-cards-container .perso-card .hidden-moreDetails-container .number-print {
