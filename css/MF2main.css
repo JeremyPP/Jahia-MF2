@@ -125,6 +125,10 @@ body {
 	min-height: 32px;
 }
 
+.notActiveCard {
+	opacity: 0.57;
+}
+
 
 /* Angular tooltip */
 
@@ -412,6 +416,37 @@ md-toolbar.colorchangeheadersearch {
 
 
 /* More details section */
+
+.optimizationHits-container {
+    margin-top: 7px;
+    position: relative;
+	color: rgba(0,0,0,0.54);
+}
+
+.optimizationHits-container .optimizationMaxHits {
+    margin-left: 24px;
+    position: absolute;
+    right: 16px;
+	top: 0;
+}
+
+.hidden-moreDetails-container .perso-card-leftContainer,
+.hidden-moreDetails-container .perso-card-rightContainer {
+	height: 28px !important;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.optimizationHits-container .optimizationHits span,
+.optimizationHits-container .optimizationMaxHits span,
+.perso-card-leftContainer .ajaxRendering span {
+	color: rgba(0,0,0,0.84);
+}
+
+.perso-card-leftContainer .ajaxRendering {
+	margin-top: 7px;
+	color: rgba(0,0,0,0.54);
+}
 
 .perso-cards-container .perso-card .hidden-moreDetails-container {
     min-height: 58px;

@@ -49,6 +49,8 @@ If not using the `md-card` angular directive, for whatever reason, you can use t
 
 More shadow deeps will be added in the future.
 
+You can use the class `.notActiveCard` to add a 57% opacity on a card.
+
 ##### Page loader
 
 Every page has a loader so all the resources have time to load and display properly.
