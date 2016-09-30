@@ -145,27 +145,27 @@ md-tooltip ._md-content {
 
 /* Percents */
 .dxWidth-100 {
-	width: 100%;
+	width: 100% !important;
 }
 
 .dxWidth-90 {
-	width: 90%;
+	width: 90% !important;
 }
 
 .dxWidth-80 {
-	width: 80%;
+	width: 80% !important;
 }
 
 .dxWidth-50 {
-	width: 50%;
+	width: 50% !important;
 }
 
 .dxWidth-Onethird {
-	width: calc(100% / 3);
+	width: calc(100% / 3) !important;
 }
 
 .dxWidth-25 {
-	width: 25%;
+	width: 25% !important;
 }
 
 /* Pixels */
@@ -535,4 +535,57 @@ md-toolbar.colorchangeheadersearch {
 .perso-cards-container .perso-card .hidden-moreDetails-container .variant-item-actions button md-icon {
     font-size: 18px;
     margin-top: 3px;
+}
+
+
+/* Properties containers */
+
+.properties-container {
+	width: 48%;
+	display: inline-block;
+	height: 42px;
+	color: rgba(0,0,0,0.54);
+	line-height: 42px;
+	box-sizing: border-box;
+	padding-left: 8px;
+}
+
+.properties-container span {
+	color: rgba(0,0,0,0.84);
+}
+
+.properties-container .property {
+	width: 47%;
+	float: left;
+}
+
+.properties-container .propertyByThree {
+	width: 32%;
+	float: left;
+}
+
+.properties-container .property:nth-child(even) {
+	text-align: right;
+}
+
+.properties-container .propertyByThree:nth-child(even) {
+	text-align: center;
+}
+
+.properties-container .propertyByThree:nth-child(3n+0) {
+    text-align: right;
+    padding-right: 28px;
+    box-sizing: border-box;
+}
+
+
+/* Show more button */
+
+.showMoreButton-container {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.showMoreButton-container button {
+	padding: 0 15px;
 }
