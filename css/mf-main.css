@@ -1,0 +1,386 @@
+/*========================
+
+Global Styles for
+Marketing Factory.
+
+Author: Jérémy Pougnet
+Start: 07/04/2017
+
+=========================*/
+
+
+
+/* ======= Main styles ======= */
+
+
+body, 
+html {
+	background: #ECEFF1;
+}
+
+md-divider {
+	border-top-color: rgba(0,0,0,0.12);
+}
+
+.truncate {
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+
+/* ======= Containers ======= */
+
+
+.mf-mainContainer {
+	min-height: 64px;
+	max-width: 1080px;
+	margin: 24px auto;
+}
+
+.mf-mainContainer-full {
+	min-height: 64px;
+	max-width: 1440px;
+	width: 90%;
+	margin: 24px auto;
+}
+
+.mf-subsection {
+	padding: 16px;
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+
+.mf-subsection .mf-subsectionMain {
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+
+/* Container titles */
+
+.mf-mainContainer h1,
+.mf-mainContainer-full h1 {
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.84);
+	position: relative;
+	padding: 4px 0;
+}
+
+.mf-mainContainer h3,
+.mf-mainContainer-full h3 {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	position: relative;
+	padding: 4px 0;
+}
+
+.mf-mainContainer div.smallLabelText,
+.mf-mainContainer-full div.smallLabelText {
+	font-size: 12px;
+	color: rgba(0,0,0,0.54);
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+
+
+/* ======= Page loader ======= */
+
+
+#pageloader {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background: #EFF3F6;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+#pageloader svg {
+	top: 45%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 42px;
+}
+
+#pageloader .spinner {
+	-webkit-animation: rotation 1.4s linear infinite;
+	animation: rotation 1.4s linear infinite;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+}
+
+@keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+}
+
+#pageloader .circle {
+	stroke-dasharray: 187;
+	stroke-dashoffset: 0;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-animation: turn 1.4s ease-in-out infinite;
+	animation: turn 1.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes turn {
+	0% {
+		stroke-dashoffset: 187;
+	}
+
+	50% {
+		stroke-dashoffset: 46.75;
+		-webkit-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+
+	100% {
+		stroke-dashoffset: 187;
+		-webkit-transform: rotate(450deg);
+		transform: rotate(450deg);
+	}
+}
+
+@keyframes turn {
+	0% {
+		stroke-dashoffset: 187;
+	}
+
+	50% {
+		stroke-dashoffset: 46.75;
+		-webkit-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+
+	100% {
+		stroke-dashoffset: 187;
+		-webkit-transform: rotate(450deg);
+		transform: rotate(450deg);
+	}
+}
+
+#pageloader svg:nth-child(1){
+	stroke: rgb(255, 152, 0);
+}
+
+
+
+/* ======= Cards ======= */
+
+
+.card-1 {
+	box-shadow: 0 1px 1px rgba(0,0,0,.15);
+	background: #fff;
+	min-height: 32px;
+	border-radius: 2px;
+}
+
+.card-notActive {
+	opacity: 0.57;
+}
+
+md-card md-card-title {
+	padding: 16px;
+}
+
+md-card md-card-title md-card-title-text:only-child .md-subhead {
+	color: rgba(0, 0, 0, 0.52);
+}
+
+
+
+/* ======= Angular tooltip override ======= */
+
+
+md-tooltip ._md-content {
+	background-color: #333;
+	box-shadow: none;
+	font-weight: 500;
+	font-size: 11px;
+	padding: 2px 8px;
+}
+
+
+
+/* ======= Element sizes ======= */
+
+
+/* Percents */
+
+[class*="mf-"] .width-100 {
+	width: 100% !important;
+}
+
+[class*="mf-"] .width-90 {
+	width: 90% !important;
+}
+
+[class*="mf-"] .width-80 {
+	width: 80% !important;
+}
+
+[class*="mf-"] .width-50 {
+	width: 50% !important;
+}
+
+[class*="mf-"] .width-Onethird {
+	width: calc(100% / 3) !important;
+}
+
+[class*="mf-"] .width-25 {
+	width: 25% !important;
+}
+
+
+/* Pixels */
+
+[class*="mf-"] .width-1440px {
+	width: 1440px;
+}
+
+[class*="mf-"] .width-1280px {
+	width: 1280px;
+}
+
+[class*="mf-"] .width-1080px {
+	width: 1080px;
+}
+
+[class*="mf-"] .width-960px {
+	width: 960px;
+}
+
+[class*="mf-"] .width-840px {
+	width: 840px;
+}
+
+[class*="mf-"] .width-720px {
+	width: 720px;
+}
+
+[class*="mf-"] .width-600px {
+	width: 600px;
+}
+
+[class*="mf-"] .width-480px {
+	width: 480px;
+}
+
+[class*="mf-"] .width-320px {
+	width: 320px;
+}
+
+
+
+/*======= Header styles =======*/
+
+
+/* Angular header color override */
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar),
+md-toolbar:not(.md-menu-toolbar) {
+	color: rgb(255, 255, 255) !important;
+	transition-duration: 0.2s;
+}
+
+md-toolbar.searching {
+	background-color: #607D8B;
+}
+
+md-toolbar.dialogSearchHeader {
+	background: #fff;
+	color: initial !important;
+	border-bottom: 1px solid #eee;
+}
+
+
+/* Header search bar */
+
+.md-toolbar-tools .searchMain {
+	max-width: 620px;
+	width: 70%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	margin-top: 10px;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14);
+	background: #fff;
+	height: 43px;
+	border-radius: 2px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.md-toolbar-tools .searchMain .searchicon {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	line-height: 40px;
+}
+
+.md-toolbar-tools .searchMain div md-icon {
+	color: #bbb;
+}
+
+.md-toolbar-tools .searchMain input {
+	color: #6d6d6d;
+	border: none;
+	outline: none;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	border-radius: 2px;
+	font-size: 16px;
+	display: block;
+	padding-left: 45px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background: #fff;
+	border-bottom-color: #eee;
+}

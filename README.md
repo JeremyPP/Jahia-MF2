@@ -49,7 +49,7 @@ If not using the `md-card` angular directive, for whatever reason, you can use t
 
 More shadow deeps will be added in the future.
 
-You can use the class `.notActiveCard` to add a 57% opacity on a card.
+You can use the class `.card-notActive` to add a 57% opacity on a card.
 
 ##### Page loader
 
@@ -80,24 +80,24 @@ You can use the `.dxWidth` class to set the size of any element on your page.
 You can set the size in pixels (px) or percent (%).
 
 The available sizes in percent are:
-- `.dxWidth-100`, sets a width of 100%.
-- `.dxWidth-90`, sets a width of 90%.
-- `.dxWidth-80`, sets a width of 80%.
-- `.dxWidth-50`, sets a width of 50%.
-- `.dxWidth-Onethird`, sets a width of 100% / 3.
-- `.dxWidth-25`, sets a width of 25%.
+- `.width-100`, sets a width of 100%.
+- `.width-90`, sets a width of 90%.
+- `.width-80`, sets a width of 80%.
+- `.width-50`, sets a width of 50%.
+- `.width-Onethird`, sets a width of 100% / 3.
+- `.width-25`, sets a width of 25%.
 
 In pixels, the available size are:
-- `dxWidth-1600px`,
-- `dxWidth-1440px`,
-- `dxWidth-1280px`,
-- `dxWidth-1080px`,
-- `dxWidth-960px`,
-- `dxWidth-840px`,
-- `dxWidth-720px`,
-- `dxWidth-600px`,
-- `dxWidth-480px`,
-- `dxWidth-320px`.
+- `width-1600px`,
+- `width-1440px`,
+- `width-1280px`,
+- `width-1080px`,
+- `width-960px`,
+- `width-840px`,
+- `width-720px`,
+- `width-600px`,
+- `width-480px`,
+- `width-320px`.
 
 More sizing options will be available on future updates.
 
@@ -112,11 +112,11 @@ The header search bar is a custom element.
 
 Just include the following html code in your page just after the `</h2>` on the header:
 ```
-<div class="searchFieldWrapper">
+<div class="search">
     <div class="searchicon">
         <md-icon> search </md-icon>
     </div>
-    <input type="text" class="searchFieldInput dxWidth-100" name="header-search" value="" placeholder="Filter by keywords">
+    <input type="text" class="search-input width-100" name="header-search" value="" placeholder="Filter by keywords">
 </div>
 ```
 
@@ -131,11 +131,11 @@ An example of a header with search bar would look like this:
             </h2>
             
             <!-- Search (Full text filter) -->
-            <div class="searchFieldWrapper">
+            <div class="search">
                 <div class="searchicon">
                     <md-icon> search </md-icon>
                 </div>
-                <input type="text" class="searchFieldInput dxWidth-100" name="header-search" value="" placeholder="Filter by keywords">
+                <input type="text" class="search-input width-100" name="header-search" value="" placeholder="Filter by keywords">
             </div>
             
         </div>
@@ -149,7 +149,6 @@ All the css for the search bar is already on the **Header styles** -> **Header s
 
 Goes on this section all custom css and specific styles.
 
-All the styles for an element are separated by a comment section with the name of this element.
 
 **---**
 
